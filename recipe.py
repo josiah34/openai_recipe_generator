@@ -34,7 +34,7 @@ class Recipe:
     def create_recipe(self):
         self.response = openai.Completion.create(
             engine="text-davinci-003",
-            max_tokens=256,
+            max_tokens=300,
             prompt=self.create_recipe_prompt(),
             temperature=0.7,
         )
